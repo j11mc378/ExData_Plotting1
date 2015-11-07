@@ -8,7 +8,7 @@ powerConsumption <- read.table(pathToFile, sep=";", header = TRUE,na.strings = "
 powerData <- subset(powerConsumption, Date == "2/2/2007" | Date == "1/2/2007")
 
 #open the png, create the plot, and then close the png file
-png(file = "plot1.png", width = 480, height = 480)
+png(file = "plot1.png", width = 480, height = 480, bg="transparent")
 hist(powerData$Global_active_power, 
      col = "red", 
      main="Global Active Power",

@@ -14,7 +14,7 @@ datetime <- strptime(datetime, "%d/%m/%Y %H:%M:%S")
 powerData$datetime <- datetime
 
 #open the png, create the plot, and then close the png file
-png(file = "plot4.png", width = 480, height = 480)
+png(file = "plot4.png", width = 480, height = 480, bg="transparent")
 
 #this plot will contain 2 columns and 2 rows. Each element will contain
 #a separate plot.

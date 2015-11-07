@@ -14,7 +14,7 @@ datetime <- strptime(datetime, "%d/%m/%Y %H:%M:%S")
 powerData$datetime <- datetime
 
 #open the png, create the plot, and then close the png file
-png(file = "plot3.png", width = 480, height = 480)
+png(file = "plot3.png", width = 480, height = 480, bg="transparent")
 
 #Create a plot and add the submetering elements individually
 #Main plot elements and adding submetering 1 for y coordinates
